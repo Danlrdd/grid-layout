@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "roboto", sans-serif;
+}
+
+body {
+    border: solid 5px orange;
+    background-color: purple;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(4, 60px);
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "footer footer footer"
+    ;
+    place-content: center;
+}
+
+.header-container {
+    border: solid 3px green;
+    background-color: aqua;
+    grid-area: header;
+}
+
+.main-container {
+    border: solid 3px black;
+    background-color: red;
+    grid-area: main;
+}
+
+.footer-container {
+    border: solid 3px blue;
+    background-color: pink;
+    grid-area: footer;
+}
