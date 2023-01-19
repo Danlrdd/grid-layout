@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "roboto", sans-serif;
+}
+
+header div{
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    display: grid;
+    margin: 0;
+    grid-template-columns: 2fr 1fr;
+    height: 50px;
+    background-color: orange;
+}
+.mobile-menu-button span{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-image: url("./ASSETS/ICONS/menu_dark.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.menu-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: auto;
+    width: 100%;
+    background-color: purple;
+}
